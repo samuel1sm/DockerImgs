@@ -33,5 +33,6 @@ RUN pip install opencv-python
 RUN pip install pandas
 RUN pip install imutils
 RUN pip install -U scikit-learn
+RUN pip install networkx
 
 ENTRYPOINT /bin/bash
