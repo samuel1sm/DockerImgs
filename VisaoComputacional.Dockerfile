@@ -34,5 +34,11 @@ RUN pip install pandas
 RUN pip install imutils
 RUN pip install -U scikit-learn
 RUN pip install networkx
+RUN apt-get install git
+RUN git clone https://github.com/samuel1sm/Project_MPCE
 
 ENTRYPOINT /bin/bash
+
+WORKDIR /Project_MPCE
+
+
