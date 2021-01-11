@@ -1,5 +1,6 @@
 from python:3.8
 
+ENV DEBIAN_FRONTEND=noninteractive 
 RUN pip install matplotlib
 RUN apt update 
 RUN apt install -y python3-scipy
@@ -37,8 +38,6 @@ RUN pip install networkx
 RUN apt-get install git
 RUN git clone https://github.com/samuel1sm/Project_MPCE
 
-ENTRYPOINT /bin/bash
 
 WORKDIR /Project_MPCE
-
-
+CMD ["python3", "./Main.py"]
