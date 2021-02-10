@@ -1,0 +1,10 @@
+- Baixar e instalar o Docker
+- rodar no gerar_pastas_iniciar_imagem
+- abrir a pasta "user/dataset/input_data" e adicionar a pasta com o dado, que irá ser analisado
+- rodar o comando alterando {caminho da pasta user}:
+docker run -v {caminho da pasta user}:/Project_MPCE/user -it -p 8888:8888  --cpus="5" --name mpce_container mpceimage_3
+- Ao terminar de carregar abrir localhost:8888 no seu navegador
+- A senha é mpce123
+- Abrir dashboard.ipynb
+
+
