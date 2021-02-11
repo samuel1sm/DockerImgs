@@ -6,5 +6,6 @@ docker run -v {caminho da pasta user}:/Project_MPCE/user -it -p 8888:8888  --cpu
 - Ao terminar de carregar abrir localhost:8888 no seu navegador
 - A senha é mpce123
 - Abrir dashboard.ipynb
+- caso o container tenha sido fechado o inicialize com o comando: docker start mpce_container -i
 
 
